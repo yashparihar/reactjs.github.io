@@ -9,15 +9,11 @@ export class Root extends React.Component {
         return (
             <div className="container">
                 <div className="row">
-                    <Header homeLink={this.props.homeLink}/>
+                    <Header />
                 </div>
 
                 <div className="row">
-                    {this.props.children}
-                </div>
-                <div className="row">
-                    <button className="btn btn-primary" onClick={this.props.mounting.bind(this)}> (Un)Mount Home
-                    </button>
+                    {/*{this.props.children}*/}
                 </div>
 
             </div>
